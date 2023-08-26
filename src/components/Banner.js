@@ -1,7 +1,13 @@
-function Banner(){
+import '../styles/Banner.scss';
+import logo from '../assets/logo.png';
+
+function Banner() {
     const title = "La maison jungle";
-    return(
-        <h1>{title}</h1>
+    return (
+        <div className="lmj-banner">
+            <img src={logo} alt="La maison jungle" className='lmj-logo'/>
+            <h1 style={{ color: 'black' }} className="lmj-title">{title}</h1>
+        </div>
     )
 }
 
