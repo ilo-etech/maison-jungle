@@ -36,7 +36,7 @@ function ShoppingList({ cart, updateCart }) {
 					!activeCategory || activeCategory === category ?
 						(
 							<div key={id}>
-								<PlantItem cover={cover} name={name} water={water} light={light} />
+								<PlantItem cover={cover} name={name} water={water} light={light} price={price} />
 								<button onClick={() => addToCart(name, price)}>Ajouter</button>
 							</div>
 						) : null
